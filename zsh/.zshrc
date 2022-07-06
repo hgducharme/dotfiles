@@ -18,3 +18,4 @@ test-microphone() {
 alias cap="bluetoothctl connect 8C:7A:AA:C7:95:60"
 alias poly="sh ~/.config/polybar/launch.sh"
 alias restart-pipewire="systemctl --user restart pipewire pipewire-pulse && systemctl --user status pipewire pipewire-pulse"
+alias k2="upower --dump | grep keyboard -A 7"
