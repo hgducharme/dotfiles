@@ -9,6 +9,8 @@ if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
   source /usr/share/zsh/manjaro-zsh-prompt
 fi
 
+alias mkdir="mkdir -p"
+
 test-microphone() {
     arecord -vv -f dat /dev/null
 }
