@@ -18,5 +18,6 @@ test-microphone() {
 alias cap="bluetoothctl connect 8C:7A:AA:C7:95:60"
 alias dap="bluetoothctl disconnect 8C:7A:AA:C7:95:60"
 alias poly="sh ~/.config/polybar/launch.sh"
+alias restart-conky="killall conky || echo "Conky was not running." && conky --daemonize &"
 alias restart-pipewire="systemctl --user restart pipewire pipewire-pulse && systemctl --user status pipewire pipewire-pulse"
 alias k2="upower --dump | grep keyboard -A 7"
