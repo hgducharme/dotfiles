@@ -23,19 +23,19 @@ display=Display\tMeta+P,Display\tMeta+P,Switch Display
 
 [khotkeys]
 _k_friendly_name=Custom Shortcuts Service
-{2912645b-6751-4124-95bd-2fdf8c3f4832}=Shift+CapsLock,none,Toggle Volume Mute
-{6215a891-331d-487e-b462-4be12ce421fa}=Shift+Up,none,Volume Up
-{6d432750-8b4d-44c8-9131-dcaff6efe7ba}=Shift+Down,none,Volume Down
+{5a730b1b-9eac-4f29-9368-45a99152a63e}=Volume Down,none,Volume Down
+{7a9e3fdd-75c6-4aa3-9ec0-aed04a6d1d12}=Volume Mute,none,Toggle Mute
+{ae292e38-3153-4a28-952b-8de989bea118}=Volume Up,none,Volume Up
 {d03619b6-9b3c-48cc-9d9c-a2aadb485550}=none,none,Search
 
 [kmix]
 _k_friendly_name=Audio Volume
 decrease_microphone_volume=Microphone Volume Down,Microphone Volume Down,Decrease Microphone Volume
-decrease_volume=Volume Down,Volume Down,Decrease Volume
+decrease_volume=none,Volume Down,Decrease Volume
 increase_microphone_volume=Microphone Volume Up,Microphone Volume Up,Increase Microphone Volume
-increase_volume=Volume Up,Volume Up,Increase Volume
+increase_volume=none,Volume Up,Increase Volume
 mic_mute=Microphone Mute\tMeta+Volume Mute,Microphone Mute\tMeta+Volume Mute,Mute Microphone
-mute=Volume Mute,Volume Mute,Mute
+mute=none,Volume Mute,Mute
 
 [ksmserver]
 Halt Without Confirmation=none,,Halt Without Confirmation
