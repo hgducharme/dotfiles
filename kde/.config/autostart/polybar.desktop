@@ -1,5 +1,5 @@
 [Desktop Entry]
 Type=Application
-Exec=/home/hgducharme/.config/polybar/launch.sh
+Exec=/home/hgducharme/.config/polybar/launch.sh --pause=5
 Hidden=false
 Name=Polybar
