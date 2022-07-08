@@ -25,6 +25,7 @@ display=Display\tMeta+P,Display\tMeta+P,Switch Display
 _k_friendly_name=Custom Shortcuts Service
 {5a730b1b-9eac-4f29-9368-45a99152a63e}=Volume Down,none,Volume Down
 {7a9e3fdd-75c6-4aa3-9ec0-aed04a6d1d12}=Volume Mute,none,Toggle Mute
+{aadb66ae-583c-4bd4-9631-1c47ea21dde4}=Meta+B,none,System Monitoring
 {ae292e38-3153-4a28-952b-8de989bea118}=Volume Up,none,Volume Up
 {d03619b6-9b3c-48cc-9d9c-a2aadb485550}=none,none,Search
 
