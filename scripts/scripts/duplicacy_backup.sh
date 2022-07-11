@@ -55,8 +55,8 @@ exitMessage() {
 startMessage
 loadConfig
 startHealthCheck
-#backupToHDD
-#backupHDDToBackblaze
-#backupTimeshiftToBackblaze
+backupToHDD
+backupHDDToBackblaze
+backupTimeshiftToBackblaze
 endHealthCheck
-#exitMessage
+exitMessage
