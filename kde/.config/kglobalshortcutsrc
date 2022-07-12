@@ -24,10 +24,13 @@ display=Display\tMeta+P,Display\tMeta+P,Switch Display
 [khotkeys]
 _k_friendly_name=Custom Shortcuts Service
 {5a730b1b-9eac-4f29-9368-45a99152a63e}=Volume Down,none,Volume Down
+{6328ff21-9597-46a3-a47c-3aa78dd6b6b4}=Media Previous,none,Previous
+{70d9f122-eafb-490e-950e-1de60f698f54}=Media Play,none,Play  Pause
 {7a9e3fdd-75c6-4aa3-9ec0-aed04a6d1d12}=Volume Mute,none,Toggle Mute
 {aadb66ae-583c-4bd4-9631-1c47ea21dde4}=Meta+B,none,System Monitoring
 {ae292e38-3153-4a28-952b-8de989bea118}=Volume Up,none,Volume Up
 {d03619b6-9b3c-48cc-9d9c-a2aadb485550}=none,none,Search
+{ed8f18ed-f015-4f4a-8ea4-9c8640d0a575}=Media Next,none,Next
 
 [kmix]
 _k_friendly_name=Audio Volume
@@ -203,11 +206,11 @@ view_zoom_out=Meta+-,Meta+-,Zoom Out
 _k_friendly_name=Media Controller
 mediavolumedown=none,none,Media volume down
 mediavolumeup=none,none,Media volume up
-nextmedia=Media Next,Media Next,Media playback next
+nextmedia=,Media Next,Media playback next
 pausemedia=Media Pause,Media Pause,Pause media playback
 playmedia=none,none,Play media playback
-playpausemedia=Media Play,Media Play,Play/Pause media playback
-previousmedia=Media Previous,Media Previous,Media playback previous
+playpausemedia=,Media Play,Play/Pause media playback
+previousmedia=,Media Previous,Media playback previous
 stopmedia=Media Stop,Media Stop,Stop media playback
 
 [org.kde.dolphin.desktop]
