@@ -1162,7 +1162,7 @@ Type=SHORTCUT
 Uuid={6328ff21-9597-46a3-a47c-3aa78dd6b6b4}
 
 [Data_5]
-Comment=Open bottom, the system monitoring tool
+Comment=Open btop, the system monitoring tool
 Enabled=true
 Name=System Monitoring
 Type=SIMPLE_ACTION_DATA
@@ -1171,7 +1171,7 @@ Type=SIMPLE_ACTION_DATA
 ActionsCount=1
 
 [Data_5Actions0]
-CommandURL=/usr/bin/btm
+CommandURL=konsole -e /usr/bin/btop
 Type=COMMAND_URL
 
 [Data_5Conditions]
