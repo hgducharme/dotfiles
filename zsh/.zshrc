@@ -26,3 +26,5 @@ alias gputemp="nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader,noun
 alias systeminfo="inxi -Fxxxza --no-host"
 alias phoro="phoronix-test-suite"
 alias dotfiles="cd ~/dotfiles"
+alias monitors="sh ~/scripts/monitors.sh"
+
