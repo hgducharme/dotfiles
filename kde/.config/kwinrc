@@ -26,5 +26,4 @@ overviewEnabled=true
 slideEnabled=false
 
 [TabBox]
-HighlightWindows=false
 LayoutName=big_icons
