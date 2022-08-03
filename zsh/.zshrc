@@ -10,7 +10,11 @@ if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
 fi
 
 test-microphone() {
-    arecord -vv -f dat /dev/null
+   arecord -vv -f dat /dev/null
+}
+
+polybar() {
+	/bin/bash ~/.config/polybar/launch.sh "$1"
 }
 
 # Files
@@ -40,6 +44,5 @@ alias gputemp="nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader,noun
 alias show="sh ~/scripts/monitors.sh show"
 
 # Misc
-alias poly="sh ~/.config/polybar/launch.sh"
 alias systeminfo="inxi -Fxxxza --no-host"
 alias update="sudo pacman -Syu && yay -Syu"
