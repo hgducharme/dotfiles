@@ -24,6 +24,15 @@ kwin4_effect_windowapertureEnabled=false
 minimizeallEnabled=false
 overviewEnabled=true
 slideEnabled=false
+tilegapsEnabled=true
+
+[Script-tilegaps]
+gapBottom=17
+gapLeft=17
+gapMid=17
+gapRight=17
+gapTop=17
+includeMaximized=true
 
 [TabBox]
 LayoutName=big_icons
