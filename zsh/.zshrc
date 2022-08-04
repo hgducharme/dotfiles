@@ -10,15 +10,41 @@ if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
 fi
 
 test-microphone() {
-   arecord -vv -f dat /dev/null
+  arecord -vv -f dat /dev/null
 }
 
-polybar() {
-	/bin/bash ~/.config/polybar/launch.sh "$1"
+poly() {
+  if [ $1 = "reset" ]; then
+    rm -r ~/.config/polybar.old/
+    cd ~/repos/polybar-themes/
+    printf '1' | ./setup.sh > /dev/null
+    poly --custom
+  else
+	  /bin/bash ~/.config/polybar/launch.sh "$1" &
+  fi
+}
+
+gpu() {
+	query=""
+	if [[ $1 == "temp" ]]; then
+		query="temperature.gpu"
+	elif [[ $1 == "memory.total" ]]; then
+		query="memory.total"
+	elif [[ $1 == "memory.used" ]]; then
+		query="memory.used"
+	elif [[ $1 == "memory.free" ]]; then
+		query="memory.free"
+	else
+		nvidia-smi
+		return
+	fi
+
+	nvidia-smi --query-gpu=$query --format=csv,noheader
 }
 
 # Files
 alias zshrc="vim ~/.zshrc"
+alias sourcezsh="source ~/.zshrc"
 alias todo="vim ~/Documents/todo.txt"
 alias dotfiles="cd ~/dotfiles"
 alias backup_log="cat /var/log/duplicacy_backup.log | less +G"
@@ -40,7 +66,6 @@ alias restart-pipewire="systemctl --user restart pipewire pipewire-pulse wireplu
 # Hardware
 alias k2="upower --dump | grep keyboard -A 7"
 alias mouse="upower --dump | grep mouse -A 7"
-alias gputemp="nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader,nounits"
 alias show="sh ~/scripts/monitors.sh show"
 
 # Misc
