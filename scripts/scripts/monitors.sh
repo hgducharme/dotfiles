@@ -8,8 +8,7 @@ if [[ "$1" == "show" && "$2" == "both" ]]; then
 elif [[ "$1" == "show" && "$2" == "left" ]]; then
 	xrandr --output $CENTER --off --output $LEFT --primary --auto --pos 0x0
 elif [[ "$1" == "show" && "$2" == "center" ]]; then
-	xrandr --output $LEFT --off
-	xrandr --output $CENTER --primary --auto
+	xrandr --output $LEFT --off --output $CENTER --primary --auto --pos 0x0
 else
 	echo "Please pass either 'regular', 'work left', or 'work center'"
 fi
