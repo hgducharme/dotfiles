@@ -42,6 +42,32 @@ gpu() {
 	nvidia-smi --query-gpu=$query --format=csv,noheader
 }
 
+show() {
+	sh ~/scripts/monitors.sh show "$1"
+}
+
+# Airpods
+ap() {
+	if [[ $1 == "connect"  ]]; then
+		bluetoothctl connect 8C:7A:AA:C7:95:60
+	elif [[ $1 == "disconnect" ]]; then
+		bluetoothctl disconnect 8C:7A:AA:C7:95:60
+	elif [[ $1 == "toggle" ]]; then
+		profile=$(pactl list | grep Active | grep a2dp | cut -d ' ' -f 3)
+		card=$(pactl list | grep "Name: bluez_card." | cut -d ' ' -f 2)
+		a2dp="a2dp-sink-aac"
+		headset="headset-head-unit-msbc"
+		if [[ $profile == "a2dp-sink-aac" ]]; then
+			echo "Switching airpods from $a2dp to $headset..."
+			pactl set-card-profile $card $headset
+		else
+			echo "Switching airpods from $headset to $a2dp..."
+			pactl set-card-profile $card $a2dp
+		fi
+	else
+	fi
+}
+
 # Files
 alias zshrc="vim ~/.zshrc"
 alias sourcezsh="source ~/.zshrc"
@@ -55,8 +81,9 @@ alias phoro="phoronix-test-suite"
 alias oo="onlyoffice --force-scale=1 &"
 
 # Bluetooth
-alias cap="bluetoothctl connect 8C:7A:AA:C7:95:60"
-alias dap="bluetoothctl disconnect 8C:7A:AA:C7:95:60"
+alias cap="ap connect"
+alias dap="ap disconnect"
+alias tap="ap toggle"
 alias btoff="bluetoothctl power off"
 alias bton="bluetoothctl power on"
 
@@ -66,7 +93,6 @@ alias restart-pipewire="systemctl --user restart pipewire pipewire-pulse wireplu
 # Hardware
 alias k2="upower --dump | grep keyboard -A 7"
 alias mouse="upower --dump | grep mouse -A 7"
-alias show="sh ~/scripts/monitors.sh show"
 
 # Misc
 alias systeminfo="inxi -Fxxxza --no-host"
