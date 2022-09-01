@@ -1,3 +1,10 @@
+# TODO
+# 1. Move window left, top, right, bottom, and corners
+# 2. Move window to next workspace
+# 3. Delete workspace
+# 4. Swap windows
+# 5. Resize window to the left, right, top, and bottom
+
 # Also see: /usr/local/Cellar/skhd/0.3.5/share/skhd/examples/skhdrc
 
 lshift - x : terminal-notifier -message "lshift - x"
