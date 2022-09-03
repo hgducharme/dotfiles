@@ -1,5 +1,6 @@
 # Use powerline
 USE_POWERLINE="true"
+
 # Source manjaro-zsh-configuration
 if [[ -e /usr/share/zsh/manjaro-zsh-config ]]; then
   source /usr/share/zsh/manjaro-zsh-config
@@ -97,3 +98,5 @@ alias mouse="upower --dump | grep mouse -A 7"
 # Misc
 alias systeminfo="inxi -Fxxxza --no-host"
 alias update="sudo pacman -Syu && yay -Syu"
+
+source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
