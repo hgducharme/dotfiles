@@ -52,8 +52,8 @@ ctrl + alt - k : yabai -m window --toggle           zoom-fullscreen
 ctrl + alt - f : yabai -m window --toggle           native-fullscreen
 
 # Move window between spaces
-ctrl + alt - left : yabai -m window --space prev; yabai -m space --focus prev
-ctrl + alt - right : yabai -m window --space next; yabai -m space --focus next
+ctrl + cmd + shift - left : yabai -m window --space prev; yabai -m space --focus prev
+ctrl + cmd + shift - right : yabai -m window --space next; yabai -m space --focus next
 
 # Move window between displays
 ctrl + alt + cmd - h : yabai -m window --display prev
