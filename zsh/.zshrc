@@ -1,13 +1,8 @@
-# Use powerline
-USE_POWERLINE="true"
-
-# Source manjaro-zsh-configuration
-if [[ -e /usr/share/zsh/manjaro-zsh-config ]]; then
-  source /usr/share/zsh/manjaro-zsh-config
-fi
-# Use manjaro zsh prompt
-if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
-  source /usr/share/zsh/manjaro-zsh-prompt
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
 test-microphone() {
@@ -49,7 +44,7 @@ show() {
 
 # Airpods
 ap() {
-	if [[ $1 == "connect"  ]]; then
+	if [[ $1 == "connect" ]]; then
 		bluetoothctl connect 8C:7A:AA:C7:95:60
 	elif [[ $1 == "disconnect" ]]; then
 		bluetoothctl disconnect 8C:7A:AA:C7:95:60
@@ -99,4 +94,8 @@ alias mouse="upower --dump | grep mouse -A 7"
 alias systeminfo="inxi -Fxxxza --no-host"
 alias update="sudo pacman -Syu && yay -Syu"
 
+# This is the location of powerlevel10k on macOS
 source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
