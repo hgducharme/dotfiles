@@ -94,6 +94,9 @@ alias mouse="upower --dump | grep mouse -A 7"
 alias systeminfo="inxi -Fxxxza --no-host"
 alias update="sudo pacman -Syu && yay -Syu"
 
+### macOS Related Items
+alias upgrade-yabai="brew services stop yabai && brew upgrade yabai && sudo yabai --uninstall-sa && sudo yabai --install-sa && sudo yabai --load-sa && brew services start yabai"
+
 # This is the location of powerlevel10k on macOS
 source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
 
