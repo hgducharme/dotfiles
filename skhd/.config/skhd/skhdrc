@@ -1,5 +1,9 @@
 # Also see: /usr/local/Cellar/skhd/0.3.5/share/skhd/examples/skhdrc
 
+# ----- TODO -----
+# - show desktop
+# - show mission control
+
 # ----- Application shortcuts -----
 rcmd - t : open -a /Applications/iTerm.app/Contents/MacOS/iTerm2
 rcmd - f : open -a /Applications/Firefox.app/Contents/MacOS/firefox
