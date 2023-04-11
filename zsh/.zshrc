@@ -96,7 +96,7 @@ alias update="sudo pacman -Syu && yay -Syu"
 
 ### macOS Related Items
 alias upgrade-yabai="brew services stop yabai && brew upgrade yabai && sudo yabai --uninstall-sa && sudo yabai --load-sa && brew services start yabai"
-alias brew-upgrade="brew update && brew upgrade"
+alias brew-update="brew update && brew upgrade"
 alias load-sa="sudo yabai --load-sa"
 
 # This is the location of powerlevel10k on macOS
