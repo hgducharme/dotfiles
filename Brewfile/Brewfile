@@ -46,6 +46,8 @@ cask "discord"
 cask "firefox"
 # Free and open-source media player
 cask "iina"
+# Note taking and to-do application with synchronization capabilities
+cask "joplin"
 # Remote access tool
 cask "logmein-client"
 # Meet, chat, call, and collaborate in just one place
