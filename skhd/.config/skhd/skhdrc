@@ -7,6 +7,7 @@
 # ----- Application shortcuts -----
 rcmd - t : open -a /Applications/iTerm.app/Contents/MacOS/iTerm2
 rcmd - f : open -a /Applications/Firefox.app/Contents/MacOS/firefox
+rcmd - 0x32 : open -a /Applications/Visual\ Studio\ Code.app/Contents/MacOS/Electron # binds to character "`"
 
 # ----- Spaces (hotkey: ctrl + cmd) -----
 
