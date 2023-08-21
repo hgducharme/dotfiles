@@ -46,6 +46,8 @@ cask "discord"
 cask "firefox"
 # Free and open-source media player
 cask "iina"
+# Terminal emulator as alternative to Apple's Terminal app
+cask "iterm2"
 # Note taking and to-do application with synchronization capabilities
 cask "joplin"
 # Remote access tool
