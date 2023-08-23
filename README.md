@@ -1,3 +1,3 @@
 # dotfiles
 
-Use `stow` to place these files where you want them.
+Use GNU stow to place these files where you want them.
