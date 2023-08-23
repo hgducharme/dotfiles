@@ -9,7 +9,8 @@ ralt - t : open -a /Applications/iTerm.app/Contents/MacOS/iTerm2
 ralt - f : open -a /Applications/Firefox.app/Contents/MacOS/firefox
 ralt - c : open -a /Applications/Visual\ Studio\ Code.app/Contents/MacOS/Electron # binds to character "`"
 ralt - s : open -a /Applications/Spotify.app/Contents/MacOS/Spotify
-ralt - o : open -a /Applications/Obsidian.app/Contents/MacOS/Obsidian 
+ralt - o : open -a /Applications/Obsidian.app/Contents/MacOS/Obsidian
+ralt - a : open -a /Applications/Anki.app/Contents/MacOS/anki 
 
 # ----- Spaces (hotkey: ctrl + cmd) -----
 
