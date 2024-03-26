@@ -99,13 +99,18 @@ alias upgrade-yabai="brew services stop yabai && brew upgrade yabai && sudo yaba
 alias brew-update="brew update && brew upgrade"
 alias load-sa="sudo yabai --load-sa"
 alias new-brewfile="brew bundle dump --describe --file=~/dotfiles/Brewfile/Brewfile --force"
-alias start-yabai="yabai --start-service"
-alias restart-yabai="brew services restart yabai"
-alias start-skhd="skhd --start-service"
-alias restart-skhd="brew services restart skhd"
+alias yabai-start="yabai --start-service"
+alias yabai-stop="yabai --stop-service"
+alias yabai-uninstall="yabai --uninstall-service"
+alias yabai-restart="yabai --restart-service"
+alias skhd-start="skhd --start-service"
+alias skhd-stop="skhd --stop-service"
+alias skhd-restart="skhd --restart-service"
+alias skhd-uninstall="skhd --uninstall-service"
+alias skhd-debug="skhd-stop || true && skhd -V"
 
 # This is the location of powerlevel10k on macOS
-source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
+source /usr/local/share/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

@@ -18,6 +18,10 @@ brew "gnupg"
 brew "htop"
 # Fast, highly customisable system info script
 brew "neofetch"
+# Theme for zsh
+brew "powerlevel10k"
+# Python version management
+brew "pyenv"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
 # Simplified and community-driven man pages
@@ -30,8 +34,6 @@ brew "wireshark"
 brew "koekeishiya/formulae/skhd"
 # A tiling window manager for macOS based on binary space partitioning.
 brew "koekeishiya/formulae/yabai"
-# A Zsh Theme
-brew "romkatv/powerlevel10k/powerlevel10k"
 # Memory training application
 cask "anki"
 # Two-factor authentication software
@@ -42,14 +44,14 @@ cask "bitwarden"
 cask "calibre"
 # Voice and text chat software
 cask "discord"
+# App to build and share containerised applications and microservices
+cask "docker"
 # Web browser
 cask "firefox"
 # Free and open-source media player
 cask "iina"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
-# Note taking and to-do application with synchronization capabilities
-cask "joplin"
 # Remote access tool
 cask "logmein-client"
 # Meet, chat, call, and collaborate in just one place
@@ -73,7 +75,9 @@ cask "vnc-viewer"
 # Video communication and virtual meeting platform
 cask "zoom"
 vscode "batisteo.vscode-django"
-vscode "James-Yu.latex-workshop"
+vscode "james-yu.latex-workshop"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-python.debugpy"
 vscode "ms-python.isort"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
@@ -81,6 +85,7 @@ vscode "ms-vscode.cmake-tools"
 vscode "ms-vscode.cpptools"
 vscode "ms-vscode.cpptools-extension-pack"
 vscode "ms-vscode.cpptools-themes"
+vscode "qiaojie.binary-viewer"
 vscode "twxs.cmake"
 vscode "vscode-icons-team.vscode-icons"
-vscode "Zignd.html-css-class-completion"
+vscode "zignd.html-css-class-completion"
