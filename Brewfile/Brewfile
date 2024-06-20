@@ -6,16 +6,28 @@ tap "koekeishiya/formulae"
 tap "romkatv/powerlevel10k"
 # Resource monitor. C++ version and continuation of bashtop and bpytop
 brew "btop"
+# Asynchronous DNS library
+brew "c-ares"
 # Cross-platform make
 brew "cmake"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
+# GNU awk utility
+brew "gawk"
 # Reports from gcov test coverage program
 brew "gcovr"
+# Validating, recursive, caching DNS resolver
+brew "unbound"
+# Open source suite of directory software
+brew "openldap"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
+# Google Testing and Mocking Framework
+brew "googletest", link: false
 # Improved top (interactive process viewer)
 brew "htop"
+# C library for the MaxMind DB file format
+brew "libmaxminddb"
 # Fast, highly customisable system info script
 brew "neofetch"
 # Theme for zsh
@@ -28,6 +40,8 @@ brew "stow"
 brew "tldr"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Internet file retriever
+brew "wget"
 # Graphical network analyzer and capture tool
 brew "wireshark"
 # Simple hotkey-daemon for macOS.
@@ -54,8 +68,6 @@ cask "iina"
 cask "iterm2"
 # Remote access tool
 cask "logmein-client"
-# Meet, chat, call, and collaborate in just one place
-cask "microsoft-teams"
 # VPN client
 cask "mullvadvpn"
 # Knowledge base that works on top of a local folder of plain text Markdown files
@@ -70,22 +82,25 @@ cask "spotify"
 cask "unetbootin"
 # Open-source code editor
 cask "visual-studio-code"
-# Remote desktop application focusing on security
-cask "vnc-viewer"
 # Video communication and virtual meeting platform
 cask "zoom"
 vscode "batisteo.vscode-django"
+vscode "codeium.codeium"
+vscode "davidanson.vscode-markdownlint"
 vscode "james-yu.latex-workshop"
 vscode "ms-azuretools.vscode-docker"
+vscode "ms-python.black-formatter"
 vscode "ms-python.debugpy"
 vscode "ms-python.isort"
+vscode "ms-python.pylint"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
-vscode "ms-vscode.cmake-tools"
+vscode "ms-vscode-remote.remote-containers"
 vscode "ms-vscode.cpptools"
 vscode "ms-vscode.cpptools-extension-pack"
 vscode "ms-vscode.cpptools-themes"
 vscode "qiaojie.binary-viewer"
-vscode "twxs.cmake"
+vscode "redhat.vscode-xml"
+vscode "tdennis4496.cmantic"
 vscode "vscode-icons-team.vscode-icons"
 vscode "zignd.html-css-class-completion"

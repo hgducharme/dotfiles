@@ -113,5 +113,8 @@ alias mdnotes="cd /Users/hgd/Library/Mobile\ Documents/iCloud~md~obsidian/Docume
 # This is the location of powerlevel10k on macOS
 source /usr/local/share/powerlevel10k/powerlevel10k.zsh-theme
 
+# Prepend texlive to the PATH according to the official documentation
+export PATH=/usr/local/texlive/2024/bin/universal-darwin:$PATH
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
