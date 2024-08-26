@@ -109,6 +109,7 @@ alias skhd-restart="skhd --restart-service"
 alias skhd-uninstall="skhd --uninstall-service"
 alias skhd-debug="skhd-stop || true && skhd -V"
 alias mdnotes="cd /Users/hgd/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Notes"
+alias update-packages="sudo port selfupdate && sudo port update outdated"
 
 # This is the location of powerlevel10k on macOS
 source /usr/local/share/powerlevel10k/powerlevel10k.zsh-theme
