@@ -71,7 +71,7 @@ ap() {
 alias zshrc="vim ~/.zshrc"
 alias sourcezsh="source ~/.zshrc"
 alias todo="vim ~/Documents/todo.txt"
-alias dotfiles="cd ~/dotfiles"
+alias dotfiles="cd ~/repos/dotfiles"
 alias backup_log="cat /var/log/duplicacy_backup.log | less +G"
 
 # Binaries/Apps
@@ -117,8 +117,11 @@ alias update-packages="sudo port selfupdate && sudo port upgrade outdated"
 # Project specifc aliases
 alias deployht="~/repos/kindlefixer-website/scripts/deploy.sh"
 
-# This is the location of powerlevel10k on macOS
-source /usr/local/share/powerlevel10k/powerlevel10k.zsh-theme
+# This is the location of powerlevel10k on intel mac
+# source /usr/local/share/powerlevel10k/powerlevel10k.zsh-theme
+
+# This is the location of powerlevel10k on silicon mac
+source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 
 # Prepend texlive to the PATH according to the official documentation
 export PATH=/usr/local/texlive/2024/bin/universal-darwin:$PATH
