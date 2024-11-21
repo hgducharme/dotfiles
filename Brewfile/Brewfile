@@ -1,57 +1,18 @@
 tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/core"
-tap "homebrew/services"
-tap "koekeishiya/formulae"
-tap "romkatv/powerlevel10k"
-# Resource monitor. C++ version and continuation of bashtop and bpytop
-brew "btop"
-# Asynchronous DNS library
-brew "c-ares"
 # Cross-platform make
 brew "cmake"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
-# GNU awk utility
-brew "gawk"
 # Reports from gcov test coverage program
 brew "gcovr"
-# Validating, recursive, caching DNS resolver
-brew "unbound"
-# Open source suite of directory software
-brew "openldap"
-# GNU Pretty Good Privacy (PGP) package
-brew "gnupg"
-# Google Testing and Mocking Framework
-brew "googletest", link: false
-# Improved top (interactive process viewer)
-brew "htop"
-# C library for the MaxMind DB file format
-brew "libmaxminddb"
-# Fast, highly customisable system info script
-brew "neofetch"
 # Theme for zsh
 brew "powerlevel10k"
-# Python version management
-brew "pyenv"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
 # Simplified and community-driven man pages
 brew "tldr"
-# Display directories as trees (with optional color/HTML output)
-brew "tree"
-# Internet file retriever
-brew "wget"
-# Graphical network analyzer and capture tool
-brew "wireshark"
-# Simple hotkey-daemon for macOS.
-brew "koekeishiya/formulae/skhd"
-# A tiling window manager for macOS based on binary space partitioning.
-brew "koekeishiya/formulae/yabai"
 # Memory training application
 cask "anki"
-# Two-factor authentication software
-cask "authy"
 # Desktop password and login vault
 cask "bitwarden"
 # E-books management software
@@ -62,45 +23,19 @@ cask "discord"
 cask "docker"
 # Web browser
 cask "firefox"
-# Free and open-source media player
-cask "iina"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
-# Remote access tool
-cask "logmein-client"
 # VPN client
 cask "mullvadvpn"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
-# Document editor
-cask "onlyoffice"
 # Peer to peer Bitorrent client
 cask "qbittorrent"
 # Music streaming service
 cask "spotify"
-# Tool to install Linux/BSD distributions to a partition or USB drive
-cask "unetbootin"
 # Open-source code editor
 cask "visual-studio-code"
+# Network protocol analyzer
+cask "wireshark"
 # Video communication and virtual meeting platform
 cask "zoom"
-vscode "batisteo.vscode-django"
-vscode "codeium.codeium"
-vscode "davidanson.vscode-markdownlint"
-vscode "james-yu.latex-workshop"
-vscode "ms-azuretools.vscode-docker"
-vscode "ms-python.black-formatter"
-vscode "ms-python.debugpy"
-vscode "ms-python.isort"
-vscode "ms-python.pylint"
-vscode "ms-python.python"
-vscode "ms-python.vscode-pylance"
-vscode "ms-vscode-remote.remote-containers"
-vscode "ms-vscode.cpptools"
-vscode "ms-vscode.cpptools-extension-pack"
-vscode "ms-vscode.cpptools-themes"
-vscode "qiaojie.binary-viewer"
-vscode "redhat.vscode-xml"
-vscode "tdennis4496.cmantic"
-vscode "vscode-icons-team.vscode-icons"
-vscode "zignd.html-css-class-completion"
