@@ -2,10 +2,10 @@
 
 Use GNU stow to place these files where you want them.
 
-To stow package(s):
+To stow package(s) from your dotfiles directory:
 
 ```sh
-stow --dir=/path/to/dotfiles --target=/path/to/home/directory --simulate --verbose package1 package2
+stow --dir=/path/to/dotfiles --target /path/to/home/directory --simulate --verbose package1 package2
 ```
 
 where,
@@ -19,6 +19,19 @@ where,
 - `--verbose[=n]` changes the verbosity level. n=3 allows you to really see what's going on.
 
 Specifying the `dir` and `target` allows you to run this command from any directory on your computer and successfully stow the packages.
+
+If you are running `stow` from the dotfiles directory you can eliminate the `dir` option:
+
+```sh
+cd /path/to/dotfiles
+stow --target /path/to/home/directory --simulate --verbose package1 package2
+```
+
+To remove (delete the symlink) a stowed package:
+
+```sh
+stow --dir=/path/to/dotfiles --target /path/to/home/directory --simulate --verbose --delete package1 package2
+```
 
 Resources:
 
