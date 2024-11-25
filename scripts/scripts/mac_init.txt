@@ -1,0 +1,30 @@
+This script will is a rought draft of how to setup a new mac the way I like it
+
+1. Install xcode cli tools
+```
+xcode-select --install
+```
+
+2. Install homebrew
+```sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+3. Set up a new SSH key and add it to github
+see: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+```sh
+ssh-keygen -t ed25519 -C "your_email@example.com"
+```
+
+4. Pull down my dotfiles and stow them in the right places
+```sh
+cd ~/repos/
+git clone https://github.com/hgducharme/dotfiles
+stow --dir=/path/to/dotfiles --target ~ --simulate --verbose zsh skhd scripts qBittorrent btop Brewfile
+```
+
+5. Install packages
+```sh
+brew bundle install --file=/path/to/brewfile
+```
