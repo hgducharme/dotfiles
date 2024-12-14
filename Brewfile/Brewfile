@@ -8,6 +8,10 @@ brew "cmake"
 brew "coreutils"
 # Reports from gcov test coverage program
 brew "gcovr"
+# Create, run, and share large language models (LLMs)
+brew "ollama"
+# Object-relational database system
+brew "postgresql@14"
 # Theme for zsh
 brew "powerlevel10k"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
