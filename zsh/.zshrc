@@ -113,6 +113,8 @@ alias skhd-uninstall="skhd --uninstall-service"
 alias skhd-debug="skhd-stop || true && skhd -V"
 alias mdnotes="cd /Users/hgd/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Notes"
 alias update-packages="sudo port selfupdate && sudo port upgrade outdated"
+alias run-docker="open -a Docker"
+alias kill-docker="pkill -SIGHUP -f /Applications/Docker.app 'docker serve'"
 
 # Project specifc aliases
 alias deployht="~/repos/kindlefixer-website/scripts/deploy.sh"
